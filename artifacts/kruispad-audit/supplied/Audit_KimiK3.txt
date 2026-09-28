@@ -1,0 +1,263 @@
+Let me start by crawling the site to enumerate every page. Quick caveat up front: I can crawl and extract every page's content and image/link inventory, but I have no shell access in this environment, so I can't git clone the repo or literally download image binaries to disk — I'll document every image URL and link instead so your scrape job has a complete manifest.
+
+Read
+https://www.kruispadhazeldean.co.za/
+View
+Read
+https://www.kruispadhazeldean.co.za/
+View
+Read
+https://www.kruispadhazeldean.co.za/
+View
+The raw response is being truncated. Let me pull the full page with JS rendering, and simultaneously check the sitemap to enumerate every page.
+
+Read
+https://www.kruispadhazeldean.co.za/sitemap.xml
+View
+Read
+https://www.kruispadhazeldean.co.za/
+View
+Read
+https://www.kruispadhazeldean.co.za/wp-sitemap-posts-post-1.xml
+View
+Read
+https://www.kruispadhazeldean.co.za/wp-sitemap-posts-page-1.xml
+View
+Read
+https://www.kruispadhazeldean.co.za/wp-sitemap-taxonomies-category-1.xml
+View
+Sitemap gives me 18 URLs. Crawling every page now, in batches.
+
+Read
+https://www.kruispadhazeldean.co.za/meer-oor-ons/
+View
+Read
+https://www.kruispadhazeldean.co.za/meer-oor-ons/droom-van-kruispad/
+View
+Read
+https://www.kruispadhazeldean.co.za/home/kontak-ons/
+View
+The sspark.genspark.ai image URLs are the crawler's proxied copies — I need the real WordPress wp-content/uploads/ URLs for the download manifest, so I'll fetch raw HTML per page in parallel with the content crawl.
+
+Read
+https://www.kruispadhazeldean.co.za/meer-oor-ons/
+View
+Read
+https://www.kruispadhazeldean.co.za/dien/
+View
+Read
+https://www.kruispadhazeldean.co.za/home/kruispad-erediens/
+View
+Read
+https://www.kruispadhazeldean.co.za/
+View
+Read
+https://www.kruispadhazeldean.co.za/preke-en-media/fred-suzi/
+View
+Read
+https://www.kruispadhazeldean.co.za/cafe-berea/
+View
+Raw HTML keeps truncating at ~600 bytes — let me check the page headers and the user's sitemap for any other URLs, then continue crawling remaining pages.
+
+Read
+https://www.kruispadhazeldean.co.za/wp-sitemap-users-1.xml
+View
+Read
+https://www.kruispadhazeldean.co.za/preke-en-media/preke/
+View
+Read
+https://www.kruispadhazeldean.co.za/groepe/
+View
+Read
+https://www.kruispadhazeldean.co.za/meer-oor-ons/span/
+View
+Read
+https://www.kruispadhazeldean.co.za/groepe/organisasies/
+View
+Read
+https://www.kruispadhazeldean.co.za/dien/elios/
+View
+Read
+https://www.kruispadhazeldean.co.za/dien/kairos/
+View
+Read
+https://www.kruispadhazeldean.co.za/odos-kidz/
+View
+Read
+https://www.kruispadhazeldean.co.za/home/bydraes/
+View
+Read
+https://www.kruispadhazeldean.co.za/2026-kalender/
+View
+Read
+https://www.kruispadhazeldean.co.za/droom-vir-kruispad/
+View
+Read
+https://www.kruispadhazeldean.co.za/preke-en-media/kruispad-erediens/
+View
+Read
+https://www.kruispadhazeldean.co.za/preke-en-media/cafe-berea/
+View
+Read
+https://www.kruispadhazeldean.co.za/home/odos-kidz/
+View
+All 18 sitemap pages crawled. The markdown images are proxied, so I need the true wp-content/uploads/ URLs. Raw HTML is truncating at ~600 bytes, so I'll use the WordPress REST API to pull exact image URLs per page. First, discover the page IDs:
+
+Read
+https://www.kruispadhazeldean.co.za/wp-json/wp/v2/pages?per_page=100&_fields=id,slug,link,featured_media
+View
+Read
+https://www.kruispadhazeldean.co.za/wp-json/wp/v2/pages/495?_fields=content
+View
+The REST API gives me exact Elementor settings with real wp-content/uploads URLs. Home page hero is a Ken Burns slideshow of 6 KPmoments images (2.5s slides, fade 500ms, zoom-in, lazyload) — duplicated for desktop (hidden on mobile) and mobile (hidden on desktop). Pulling the rest of the home page content plus other key pages' raw content now.
+
+Read
+https://www.kruispadhazeldean.co.za/wp-json/wp/v2/pages/495?_fields=content
+View
+Read
+https://www.kruispadhazeldean.co.za/wp-json/wp/v2/pages/495?_fields=content
+View
+Read
+https://www.kruispadhazeldean.co.za/wp-json/wp/v2/pages/869?_fields=content
+View
+Read
+https://www.kruispadhazeldean.co.za/wp-json/wp/v2/pages/805?_fields=content
+View
+Read
+https://www.kruispadhazeldean.co.za/wp-json/wp/v2/pages/1274?_fields=content
+View
+Read
+https://www.kruispadhazeldean.co.za/wp-json/wp/v2/pages/805?_fields=content
+View
+Read
+https://www.kruispadhazeldean.co.za/wp-json/wp/v2/media?per_page=100&_fields=id,slug,source_url,media_details
+View
+Read
+https://www.kruispadhazeldean.co.za/wp-json/wp/v2/media?per_page=100&_fields=id,slug,source_url,media_details&page=2
+View
+Read
+https://www.kruispadhazeldean.co.za/wp-json/wp/v2/media?per_page=100&_fields=id,source_url
+View
+Read
+https://www.kruispadhazeldean.co.za/wp-json/wp/v2/media?per_page=100&_fields=id,source_url
+View
+Read
+https://www.kruispadhazeldean.co.za/wp-json/wp/v2/media?per_page=100&_fields=id,source_url&page=2
+View
+Read
+https://www.kruispadhazeldean.co.za/wp-json/wp/v2/media?per_page=100&_fields=id,source_url&page=3
+View
+Full media library is 300+ assets across 3 pages. Now I need the remaining page contents to map images to pages, and the external URLs on key pages (groepe, bydraes, preke, kalender). Let me pull those.
+
+Read
+https://www.kruispadhazeldean.co.za/wp-json/wp/v2/pages/865?_fields=content
+View
+Read
+https://www.kruispadhazeldean.co.za/wp-json/wp/v2/pages/1986?_fields=content
+View
+Read
+https://www.kruispadhazeldean.co.za/wp-json/wp/v2/pages/863?_fields=content
+View
+Read
+https://www.kruispadhazeldean.co.za/wp-json/wp/v2/pages/1986?_fields=content
+View
+Read
+https://www.kruispadhazeldean.co.za/wp-json/wp/v2/pages/3758?_fields=content
+View
+Read
+https://www.kruispadhazeldean.co.za/wp-json/wp/v2/pages/859?_fields=content
+View
+Read
+https://www.kruispadhazeldean.co.za/wp-json/wp/v2/pages/853?_fields=content
+View
+Read
+https://www.kruispadhazeldean.co.za/wp-json/wp/v2/pages/613?_fields=content
+View
+I now have the full picture. Let me grab the Eleos/Kairos/Organisasies/Meer-oor-ons raw content quickly to complete image mapping, then deliver the audit.
+
+Read
+https://www.kruispadhazeldean.co.za/wp-json/wp/v2/pages/871?_fields=content
+View
+Read
+https://www.kruispadhazeldean.co.za/wp-json/wp/v2/pages/483?_fields=content
+View
+I have everything needed — full page inventory, complete Elementor structure, real image URLs, and the media library manifest. One last check on the broken redirect I spotted on /dien/, plus the missing slug from the truncated sitemap:
+
+Read
+https://www.kruispadhazeldean.co.za/http-www-boxout-web-za-gebeure-kalender/month/
+View
+Read
+https://www.kruispadhazeldean.co.za/wp-sitemap-posts-page-1.xml
+View
+Crawl complete. All 18 pages crawled, full Elementor source extracted, real image URLs mapped, media library enumerated (300+ assets). One caveat on scope: I have no shell access in this environment, so I couldn't git clone the repo or write files to disk — every image and link is documented below with exact URLs so your scrape job has a complete manifest. There are also three broken/bogus links on the live site you should know about.
+
+STACK & STRUCTURE
+
+WordPress + Elementor, theme Twenty Seventeen (no-svg, Font Awesome 4 classes). Language en-US but content is Afrikaans — <html lang="en-US"> is wrong, fix to af-ZA. Page IDs: home=495, meer-oor-ons=483, span=869, droom=613, kontak=805, dien=851, erediens=857, fred-suzi=859, cafe-berea=861, preke=863, groepe=865, organisasies=871, elios=873, kairos=875, odos-kidz=1274, bydraes=1986, kalender=3758.
+
+ALL 18 PAGES
+
+/ — Home. Hero: Ken Burns background slideshow, 6 KPmoments images, 2.5s slide, 500ms fade, zoom-in, lazyload on. Rendered twice — a desktop version (hidden-mobile) and a mobile version (hidden-desktop). Sections: "Welkom by ons familie" (x2), "A way of life...", belief statement, then 3 linked tiles: Kruispad (→/preke-en-media/kruispad-erediens/), Café Berea (→/preke-en-media/cafe-berea/), Odos Kids (→/home/odos-kidz/). Footer contact block: 4 emails + "Kantoor" + phone, white text on dark.
+/meer-oor-ons/ — Hero slideshow (12 legacy Image-1..10 + Berea-Cafe-Thumb-1 + Berea-Cafe-Static-1, 2s slide, 1.5s slide_left transition). Cards: Die Droom, Kruispad Span, Organisasies (fadeInLeft/fadeInRight animated 50/50 rows).
+/meer-oor-ons/droom-van-kruispad/ — 20 belief statements, hero bg image with overlay (hidden-mobile, stretched).
+/meer-oor-ons/span/ — "DIE SPAN", gradient hero. 4 staff portrait + bio cards: Fred Louw (predikant), Frikkie Geyser (Finansies), Christiaan Worst (jeug predikant), Elsje Visser (Kantooradministrasie).
+/home/kontak-ons/ — 3-image carousel (KPmoments-4, KPmoments, KPmoments-49), autoplay on, pause on hover/interaction, arrows inside + pagination outside. Two address blocks (Eredienste: Curro Hazeldean Primary; Kantore: Silver Lakes Office Park), office hours Ma–Do 08:00–16:00 / Vr 08:00–12:00, "Vorms vir Nuwe Lede" Google Drive links, 2 logo images.
+/home/kruispad-erediens/ — Venue block, 4 Google Maps-linked time rows (Erediens Sondae 9:30–10:30, Café Berea Sondae 17:30–18:30), social row.
+/preke-en-media/kruispad-erediens/ — Duplicate of #6.
+/preke-en-media/fred-suzi/ — 2 images + 1 heading image, "Suzi en Oom Fred" explainer, embedded YouTube video (watch?v=KkfNjoZLeHk), social row, suzi@ email.
+/cafe-berea/ — 1 header image + copy block.
+/preke-en-media/cafe-berea/ — Duplicate of #9.
+/preke-en-media/preke/ — 2 thumbnail images both linking to YouTube @kruispadgemeente585.
+/groepe/ — "Young Adults" group + "Senior tee" group, 2 images (incl. Canva-made Green-Organic-Tea...png).
+/groepe/organisasies/ — Mislabeled: entire page content is Eleos, not an org index. Links out to Eleos/Kairos subpages with images Untitled.jpg and 13517638_..._o-1.jpg.
+/dien/elios/ — Full Eleos NPO text (Pretoria West, since 1998, Booysens/Claremont).
+/dien/kairos/ — Kairos NPO text (Ef 5:16, Dr. Gideon Du Plessis, 160–200 food parcels).
+/odos-kidz/ — Odos Reeks book series. Hero bg (hidden-desktop/hidden-tablet mobile variant), 2 images linking to odos.co.za and odos.co.za/odos-1.
+/home/bydraes/ — Financial giving text. Hero background slideshow of 5 Image-6/7/9/11...scaled.jpg images, hidden-mobile, stretched. 1 inline image (a1706e85...jpg).
+/2026-kalender/ — Two headings only, empty content placeholder.
+Plus 1 post /droom-vir-kruispad/ (duplicate of #3) and 1 author archive /author/admin/.
+
+IMAGE MANIFEST — CRITICAL (the client's sacred images)
+
+All real wp-content/uploads URLs, grouped by page, with the layout/positioning rules the client is anal about:
+
+Home hero (6, Ken Burns, zoom-in, lazyload, duplicated desktop/mobile):
+
+Copy2025/09/KPmoments-4-scaled.jpg
+2025/09/KPmoments-34-scaled.jpg
+2025/09/KPmoments-39-scaled.jpg
+2025/09/KPmoments-46-scaled.jpg
+2025/09/KPmoments-48-scaled.jpg
+2025/09/KPmoments-49-1-scaled.jpg   (Canon EOS R6, 70mm, f/2.8, ISO1000)
+Home tiles: 2021/02/Kruispad-Thumb-1-scaled.jpg, Berea-Cafe-Thumb-2-scaled.jpg, Odos-Kidz-Thumb-1-scaled.jpg, ed5345e-897b-42.jpg (Odos logo, 1280w).
+
+Meer-oor-ons hero (12): 2021/02/Image-1..10-1-scaled.jpg, Berea-Cafe-Thumb-1-scaled.jpg, Berea-Cafe-Static-1-scaled.jpg. Card image: 2021/04/5ea4eea885192-1.jpg (full-width 2560w).
+
+Kontak-ons carousel (3): 2025/09/KPmoments-4-scaled.jpg, KPmoments-scaled.jpg, KPmoments-49-1-scaled.jpg. Logos: 2021/02/LANDINGPAGECURROHAZELDEAN.fw_-1.png (525x186) + a second.
+
+Bydraes hero (5, bg slideshow): 2021/04/Image-6-1-scaled.jpg, Image-7-1-scaled.jpg, Image-9-1-scaled.jpg, Image-11-1-scaled.jpg + 1 more. Inline: 2021/02/a1706e85-8793-4202-bbd3-b4d54d013249.jpg (955x860).
+
+Droom hero bg: 2021/02/Changing-view-from-space.jpg + stock unsplash set. Span portraits: KPSTAFF-6/4/8 + 7a09c0d2-...jpg. Fred-Suzi: 2 photos + heading img. Preke: 2 thumbs. Groepe: 2025/09/Green-Organic-Tea-Its-time-for-Tea-Your-Story.png + Black-Yellow-Modern-Young-Creative-Podcast-Instagram-Post.png + 2026/09/mobile_874723-99.avif. Odos: Odos-1..10 (jpg/png). Organisasies: Untitled.jpg (768w), 13517638_..._o-1.jpg (768w). Logos: logo-main001.jpg, logo-main-1.jpg, logo-main_edit.jpg, kairos_bigger_cl.jpg, kantoor-admin.jpg, finance2-1000x667.jpg.
+
+Positioning rules to honor on rebuild: heroes are full-viewport min-height stretched sections with elementor-background-overlay; images use object-fit-style cover via background, never a hard square crop. Staff/tile images are natural aspect (width/height preserved, sizes=100vw). The duplication pattern (separate desktop + mobile sections toggled by hidden-mobile/hidden-desktop) is how they control crop per breakpoint — replicate that with per-breakpoint focal points, not a single object-fit: cover box that decapitates faces.
+
+Full library: ~300 assets across 3 REST pages — run this to dump every original URL:
+
+Copyfor p in 1 2 3; do curl -s "https://www.kruispadhazeldean.co.za/wp-json/wp/v2/media?per_page=100&page=$p&_fields=source_url" ; done | jq -r '.[].source_url' > manifest.txt
+ALL EXTERNAL LINKS
+
+Facebook Kruispad-Hazeldean-353684361326192, YouTube channel UC1WmZGs_3AqwUd5CB1yLHag + @kruispadgemeente585, Instagram kruispad_hazeldean, Google Maps (Curro Hazeldean, place 0x4d954b43f85926c6), odos.co.za + /odos-1, 2 Google Drive member-form files (18DqEehprxEd4J30u4jM0ua_TXxx2ZmBn, 1bEDUR37dp7QglMh3I7OMtdOpB-DxriM_), YouTube embed KkfNjoZLeHk, Eleos/Kairos subpages.
+
+CONTACT DATA
+
+fred@, christiaan@, admin@, sandy@, suzi@ @kruispadhazeldean.co.za. Kantoor 071 882 9815. Eredienste: Curro Hazeldean Primary, 1 Silver Lakes Rd, Hazeldean 0081. Kantoor: Kantoor 4, Gebou B, Silver Lakes Office Park, 1 Von Backstrom Blvd, Pretoria 0081.
+
+BROKEN / BUGS ON LIVE SITE
+
+/dien/ calendar link → https://www.kruispadhazeldean.co.za/http-www-boxout-web-za-gebeure-kalender/month/ (malformed, slug-ified URL — dead, hits a bot-check wall).
+christiaan@kruispadhazelden.co.za on erediens page and christiaan@kruispadhazeldea.co.za on span page — both misspelled domains.
+/2026-kalender/ is empty.
+/groepe/organisasies/ titled "Organisasies" but body is 100% Eleos.
+/droom-vir-kruispad/ duplicates /meer-oor-ons/droom-van-kruispad/.
+lang="en-US" on an Afrikaans site.
+Want me to dump the full 300-asset media manifest as a text file list, or map images-to-pages into a CSV/JSON you can feed the rebuild? I can't clone the repo from here — if you want the manifest committed to kruispad, tell me the target path and I'll format it for a commit you run locally.

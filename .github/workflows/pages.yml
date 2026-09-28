@@ -38,6 +38,10 @@ jobs:
           ASTRO_TELEMETRY_DISABLED: 1
       - name: Link, image, and alt checks
         run: npm run check:links && npm run check:images && npm run check:alt
+      - name: Configure Pages (attempts enablement if not yet enabled)
+        uses: actions/configure-pages@v5
+        with:
+          enablement: true
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:

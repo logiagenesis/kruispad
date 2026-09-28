@@ -1,0 +1,319 @@
+SITE AUDIT
+Kruispad Hazeldean Gemeente
+Source audited: https://www.kruispadhazeldean.co.za/
+GitHub target: https://github.com/logiagenesis/kruispad — empty public repo, created 28 Sep 2026 06:41 UTC, size 0, no commits, default branch main. No code to audit.
+1. What this audit is
+Every fact below was taken from a live HTTP scrape on 28 Sep 2026: WordPress REST API (pages, posts, media), wp-sitemap XML, robots.txt (empty), HTML of all published pages, HTTP status of every discovered URL, and desktop screenshots of layout. Nothing here is inferred about unpublished content, member-only pages, or analytics.
+2. Stack (verified from response headers + HTML)
+Item
+Value
+CMS
+WordPress (wp-json exposed)
+PHP / server
+PHP/8.3.33 on LiteSpeed, HTTP/2
+Theme
+Twenty Seventeen
+Page builder
+Elementor (plus leftover astra-sites plugin path in HTML)
+SSL plugin path
+wp-letsencrypt-ssl
+Homepage page ID
+495 (Tuis)
+Cache
+public, max-age=86400
+robots.txt
+Empty body
+Meta description
+None
+Footer credit
+Proudly powered by WordPress
+3. Published inventory
+Sitemap index lists 4 files: pages, posts, categories, users.
+Type
+Count
+Notes
+Pages (WP REST)
+17
+All published; listed below
+Posts
+1
+/droom-vir-kruispad/ dated 14 Dec 2020 — duplicate of the page Droom van Kruispad
+Categories
+1
+/category/uncategorized/
+Authors
+1
+/author/admin/
+Media library items
+280 unique IDs (API header said 283; 3 IDs missing across pages 1–3)
+198 JPEG, 79 PNG, 2 MP4, 1 AVIF
+Media with empty alt
+278 / 280
+Fail for rebuild
+Upload years
+2021-02: 224 · 2021-03: 1 · 2021-04: 14 · 2025-09: 40 · 2026-09: 1
+Library is mostly 5-year-old assets plus a Sep 2025 reshoot (KPmoments / KPSTAFF)
+3.1 Information architecture (live menu)
+Top item
+Child
+Canonical URL
+HTTP
+Tuis
+—
+/
+200
+Tuis
+Kruispad Gemeente
+/home/kruispad-erediens/
+200
+Tuis
+Cafe Berea
+/cafe-berea/
+200
+Tuis
+Vind jou plek
+/groepe/
+200
+Tuis
+Odos Kids
+/odos-kidz/
+200
+Wie is ons
+—
+/meer-oor-ons/
+200
+Wie is ons
+Droom van Kruispad
+/meer-oor-ons/droom-van-kruispad/
+200
+Wie is ons
+Span
+/meer-oor-ons/span/
+200
+Groepe
+—
+/groepe/organisasies/
+200
+Groepe
+Eleos
+/dien/elios/
+200
+Groepe
+Kairos
+/dien/kairos/
+200
+Eredienste
+parent page_id=485
+/?page_id=485
+404
+Eredienste
+Suzi
+/preke-en-media/fred-suzi/
+200
+Eredienste
+Preke
+/preke-en-media/preke/
+200
+2026 Kalender
+—
+/2026-kalender/
+200 (almost empty)
+Bydraes
+—
+/home/bydraes/
+200
+Kantore
+—
+/home/kontak-ons/
+200
+—
+Raak betrokke (not labelled Dien in top nav)
+/dien/
+200
+4. Contact facts collected from live pages
+Field
+Value as published
+Office address
+Kantoor 4, Gebou B, Silver Lakes Office Park, 1 Von Backstrom Blvd, Pretoria, 0081
+Office hours
+Ma–Do 08:00–16:00 · Vr 08:00–12:00
+Erediens venue
+Curro Hazeldean Primary / Curro Private School, 1 Silver Lakes Road, Hazeldean / Silver Lakes, Pretoria, 0081
+Erediens tye
+Sondae 09:30–10:30
+Café Berea tye
+Sondae 17:30–18:30
+Phone / WhatsApp
+071 882 9815
+fred@
+fred@kruispadhazeldean.co.za
+christiaan@
+christiaan@kruispadhazeldean.co.za (also published as christiaan@kruispadhazelden.co.za and christiaan@kruispadhazeldea.co.za)
+admin@
+admin@kruispadhazeldean.co.za (also published as admin@ kruispadhazeldean.co.za with a space)
+sandy@
+sandy@kruispadhazeldean.co.za
+suzi@
+suzi@kruispadhazeldean.co.za (Suzi page only)
+Facebook
+https://www.facebook.com/Kruispad-Hazeldean-353684361326192
+Instagram
+https://www.instagram.com/kruispad_hazeldean/
+YouTube handle
+https://www.youtube.com/@kruispadgemeente585
+YouTube channel ID
+https://www.youtube.com/channel/UC1WmZGs_3AqwUd5CB1yLHag
+WhatsApp group (valid)
+https://chat.whatsapp.com/GAPiX698AgFH91aM7NU8hS
+WhatsApp group (broken on page)
+https://chat.whatsapp.com/https://chat.whatsapp.com/GAPiX698AgFH91aM7NU8hS → 404
+New-member forms (Drive)
+drive.google.com/file/d/18DqEehprxEd4J30u4jM0ua_TXxx2ZmBn and .../1bEDUR37dp7QglMh3I7OMtdOpB-DxriM_
+Bank (from Bydraes image only — not in HTML text)
+Kruispad Gemeente · Standard Bank · Lynnwood Ridge · Rek 0133 838 25 · Tak 012445 · SnapScan QR on same graphic
+4.1 Staff published on /meer-oor-ons/span/
+Name
+Role as published
+Photo treatment observed
+Fred Louw
+Voltydse predikant. Getroud met Susan Louw. Kinders: Annine, Elaine, Pieter.
+Landscape photo forced into a short card. Head and torso cropped by the card box.
+Frikkie Geyser
+Labelled “Kruipad Finansies” (typo: Kruipad).
+Headshot fits the box better than Fred’s.
+Christiaan Worst
+Jeug predikant. One-line bio only.
+Landscape photo cropped to torso; face cut off at top of card.
+Elsje Visser
+Kantooradministrasie. No bio.
+Same card crop pattern.
+5. Image system — this is the rebuild constraint
+Client constraint, confirmed by the live CSS: they reuse the same photographs everywhere. Placement that cuts faces is a fail. The current theme does that on every inner page.
+5.1 How images are used today
+Global header on inner pages: congregation photo cropped-KRUISPAD-66-scaled-1 used as a short wide banner (rendered ~780×215 in the header slot). Faces in the front row are bisected. Same crop on Span, Odos, Erediens, Bydraes.
+Homepage hero: full-bleed congregation photo with logo + title overlaid at the bottom. At 1920px the group is readable. The same file cannot be reused as a 215px-tall strip without destroying faces.
+Homepage mid-section: Elementor Ken Burns slideshow of KPmoments-49, 33, 26-1, 18, 8, 3 (all 1707×2560 portrait photos used as 765×484 landscape CSS backgrounds). Portrait photos in a landscape frame = guaranteed crop.
+Homepage cards: Skyfie-voorblad.png, Cafe-Berea-vakansie PNG, and a 2021 kids photo. Card images are square-ish crops of non-square sources.
+Span cards: Elementor thumbs of KPSTAFF-6, a UUID staff photo, KPSTAFF-4, KPSTAFF-8. Card height clips heads. Observed on desktop screenshot 28 Sep 2026.
+Odos Kids: 2021 graphic series Odos-2…Odos-10 plus Odos-Kidz-Thumb-1-scaled.jpg as a full-width banner of three children lying on grass with books over their faces — this one is composed to work as a wide banner.
+Bydraes: lion-style banner + bank details stored only as JPEG a1706e85-8793-4202-bbd3-b4d54d013249.jpg. Bank numbers are not in the HTML.
+Preke: no sermon player. A YouTube JPEG poster (youtube-1024x576.jpg) and one AVIF (mobile_874723-99.avif). Click-through to the actual channel is not wired as an embed.
+Two MP4s in the library: Green-Organic-Tea-Its-time-for-Tea-Your-Story.mp4 and WhatsApp-Video-2021-02-15-at-11.56.37.mp4 (Kairos page).
+Logo: Kruispad_Logo_Oranje.jpg, square, used at ~74×74 in the header. Multiple cropped- duplicates exist in the library.
+5.2 Media geometry (library originals)
+Orientation
+Count
+Rebuild rule
+Landscape (w > h)
+173
+Safe for heroes, banners, cards that are wide. Do not force into 1:1 staff tiles.
+Portrait (h > w)
+53
+Includes the KPmoments series at 1707×2560. Must use object-position with a named focal point. Never CSS-cover these into a short landscape box.
+Square
+53
+Safe for staff tiles, logos, Instagram-style cards.
+No dimensions in API
+1
+Inspect before use.
+5.3 Hard image rules for the rebuild (do not break these)
+Never put a group photo into a short header strip. If the congregation photo stays, it is a hero only, min-height large enough that front-row faces are fully visible, or it is not used.
+Staff photos: one aspect ratio only. Recrop KPSTAFF originals to a consistent 4:5 or 1:1 with the face in the upper third. Do not reuse Elementor auto-thumbs.
+KPmoments portraits stay portraits, or get a manual landscape crop signed off. Auto object-fit:cover on a 16:9 box will cut faces — that is the current fail.
+Keep their existing photos. Do not replace with stock. Improve framing, colour, and compression.
+Every image gets alt text. Current score: 2 of 280.
+Bank / SnapScan graphic must remain readable at mobile width, or the numbers must move into HTML (text) so screen readers and search can see them.
+Do not serve 2560px portraits as CSS backgrounds without srcset. Current Ken Burns slides pull the -scaled 1707px file into a 765px box.
+6. Page-by-page findings
+Tuis /
+H1: Kruispad Hazeldean Gemeente. Copy is thin: “Welkom by ons familie”, “A way of life...”, creed line about the Bible and the Holy Spirit. Three destination cards (Kruispad, Café Berea, Odos Kids). Footer emails + 071 882 9815. Card links still point at old paths /preke-en-media/kruispad-erediens/ and /home/odos-kidz/ which resolve to the canonical URLs. No primary CTA for when / where / how to visit above the fold.
+Kruispad Gemeente /home/kruispad-erediens/
+Hero: keyboard photo with framed title. Confirmed times: Sondae 09:30–10:30 (erediens), Café Berea 17:30–18:30. Venue: Curro Private School, 1 Silverlakes Rd. Google Maps embed for “Kruispad Gemeente”. Social labels Facebook / YouTube / Instagram are present. Below the hero, a large empty dark region on desktop — the page is mostly chrome, not content. Email typo on this page: christiaan@kruispadhazelden.co.za and admin@ with a space.
+Cafe Berea /cafe-berea/
+Evening service page. Staff crop KPSTAFF-3 used as a 300×300 square. Same Curro map embed. Copy describes Café Berea as for young people. Last modified 6 Oct 2025 — older than the Sep 2026 content pass on other pages.
+Vind jou plek /groepe/
+Young Adults (30-somethings, monthly) and Senior tee. WhatsApp join link is published twice: once correctly, once with the URL duplicated inside itself (404). Communication is “all in the WhatsApp group” — the page itself has no schedule, no host names, no venue.
+Odos Kids /odos-kidz/
+Longest page (42 KB HTML). Banner of children with books. Long Afrikaans endorsement of the Odos book series, then the Odos-2…Odos-10 graphic set linking out to odos.co.za paths. Also mailto:admin@odos.co.za. This page mixes “our kids ministry” with a third-party curriculum catalogue. Rebuild must split those two jobs or the user cannot tell what happens on a Sunday at Curro.
+Wie is ons /meer-oor-ons/
+Hub cards: Die Droom, Kruispad Span, Organisasies. Links include /meer-oor-ons/organisasies/ which redirects to /groepe/organisasies/.
+Droom van Kruispad /meer-oor-ons/droom-van-kruispad/
+Statement of 20 “’n Gemeente waar…” lines. No images in the page body. Duplicate post exists at /droom-vir-kruispad/ (2020). Keep one canonical URL in the rebuild.
+Span /meer-oor-ons/span/
+Four people, four cards. Image crop is the documented fail. Bios are one to three sentences. Footer email for Christiaan is truncated: christiaan@kruispadhazeldea.co.za.
+Organisasies /groepe/organisasies/
+Eleos + Kairos long copy (Afrikaans and English). External sites eleos.co.za and kairoscl.org.za. Internal links /meer-oor-ons/organisasies/elios/ and /…/kairos/ are 404. Live working URLs are /dien/elios/ and /dien/kairos/.
+Eleos /dien/elios/
+Slug is elios, title is Eleos. Community-uplift NPO copy, Wilhelm Street Community Centre, Market Street ECD, after-school care. Facebook + globe buttons. Do not change the slug without a redirect — it is already in the menu.
+Kairos /dien/kairos/
+NPO “Verander Lewens”, Efesiërs 5:16 definition, Dr Gideon Du Plessis origin story. Facebook page Kairos-632218386932616 and kairoscl.org.za. Background video from 2021 WhatsApp MP4.
+Suzi /preke-en-media/fred-suzi/
+“Suzi en Oom Fred” Sunday kids slot before Odos classes. Same Curro address. suzi@ email. Photos: 2021 couple photo + KRUISPAD-29 crop. Social row again. No video embed of the actual slot.
+Preke /preke-en-media/preke/
+Copy: “Indien jy uitgemis het, hier kan jy weer na die preke luister.” There is no audio/video list. Only a YouTube poster image. Functionally a dead media page.
+2026 Kalender /2026-kalender/
+Body text is one sentence: “Kom loer gereeld om eerste te sien wat wanneer gebeur.” No events. /dien/ still contains a leftover September 2026 HTML calendar widget plus dead links to /http-www-boxout-web-za-gebeure-kalender/month/ (404) and /2020/12/ (200, old archive).
+Bydraes /home/bydraes/
+Giving copy. August is a no-collection month (text is not year-stamped — it will rot). Bank details exist only inside the SnapScan JPEG. Reference convention: van+10de or 10de. Approved financial statements available on request via the office. No account number in HTML.
+Kantore /home/kontak-ons/
+Two locations side by side: Silver Lakes Office Park (office) and Curro Hazeldean (services). Two Google Maps embeds. Three 150×150 KPmoments thumbs. Two Google Drive “Vorms vir Nuwe Lede” downloads. Tijger_2 and LANDINGPAGECURROHAZELDEAN.fw_-1.png leftovers from 2021.
+Raak betrokke /dien/
+Exists in the page tree. Menu label is not “Dien”. Content is a stub of the droom lines plus a leftover calendar, not a volunteering flow.
+7. Broken and dangerous links (verified HTTP)
+URL
+Status
+Where it appears
+/?page_id=485 (Eredienste parent)
+404
+Primary nav
+/meer-oor-ons/organisasies/elios/
+404
+Organisasies body
+/meer-oor-ons/organisasies/kairos/
+404
+Organisasies body
+/http-www-boxout-web-za-gebeure-kalender/month/
+404
+/dien/
+WhatsApp URL with doubled chat.whatsapp.com prefix
+404
+/groepe/
+christiaan@kruispadhazelden.co.za
+wrong domain spelling
+/home/kruispad-erediens/
+christiaan@kruispadhazeldea.co.za
+truncated
+/meer-oor-ons/span/
+admin@ kruispadhazeldean.co.za
+space in address
+erediens page HTML
+“Kruipad Finansies”
+typo
+Span
+8. Bigger picture — what a rebuild must not break
+Fixing the header crop by deleting the congregation photo will be treated as a content failure. The photo stays; the container changes.
+The church runs two physical places. The rebuild must keep Office vs Erediens distinct on every contact surface. Merging them into one pin is a functional fail.
+Sunday rhythm that must remain findable in one glance: 09:30 erediens, Suzi/Odos during the morning service, 17:30 Café Berea. That rhythm is currently split across three pages and missing from the homepage.
+Eleos and Kairos are separate NPOs with their own domains. The church site should introduce them and hand off. Do not absorb their sites.
+Odos is a third-party curriculum (odos.co.za). Keep the Sunday-kids explanation on this domain; do not turn the church site into the Odos catalogue.
+Giving: the SnapScan QR and Standard Bank record are the operational source. If they become HTML text, the QR still has to work on mobile. Do not invent new account details.
+Afrikaans is the site language. A few Eleos/Kairos blocks are English. Rebuild should pick a language rule and stick to it; do not silently translate the creed.
+URL aliases already exist (/preke-en-media/cafe-berea/ → /cafe-berea/, /home/odos-kidz/ → /odos-kidz/, /meer-oor-ons/organisasies/ → /groepe/organisasies/). New site must 301 the current canonicals plus these aliases or inbound links die.
+GitHub repo is empty. It is the destination for the rebuild, not a source. Do not assume a stack from the repo.
+9. Rebuild sequence that does not strand content
+Freeze the asset set: originals stored under artifacts/kruispad-audit/assets/ named {id}_{filename}. Do not start layout until staff + hero crops are chosen from these files.
+Write the IA as seven user jobs: Visit Sunday, Meet the people, Kids, Young adults / seniors, Give, Office, Partners (Eleos/Kairos/Odos). Map each current URL into one job. Kill empty pages (Kalender-as-placeholder, Preke-without-player) or fill them before launch.
+Build the image components first: HeroFull, HeroSafe (face-aware), StaffCard (fixed 4:5, object-position per person), MomentPortrait, Logo. No generic ImageBox.
+Put times, both addresses, phone, and the four working emails in a single source of truth. Every page footer reads from that. Delete the three misspelled Christiaan/admin variants.
+Redirect matrix before DNS cutover: all 17 canonicals + the aliases listed in section 3 and 8 + /droom-vir-kruispad/ + /?page_id=485.
+Only then design visual 10x. Visual work on top of a broken IA re-creates this site with nicer CSS.
+10. Files produced by this scrape
+Path
+Contents
+artifacts/kruispad-audit/Kruispad-Hazeldean-Site-Audit.docx
+This report
+artifacts/kruispad-audit/assets/
+Original media downloads named {id}_{filename}
+artifacts/kruispad-audit/media-inventory.csv
+280 media rows: id, mime, width, height, url, alt, date
+Not collected (does not exist on the public site): sermon audio files, calendar event records, contact-form submissions, member directory, unpublished drafts, analytics.

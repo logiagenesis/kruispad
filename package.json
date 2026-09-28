@@ -12,7 +12,9 @@
     "check:links": "node scripts/check-links.mjs",
     "check:images": "node scripts/check-images.mjs",
     "check:alt": "node scripts/check-alt.mjs",
-    "qa": "npm run lint && npm run typecheck && npm run build && npm run check:links && npm run check:images && npm run check:alt"
+    "qa": "npm run lint && npm run typecheck && npm run build && npm run check:links && npm run check:images && npm run check:alt",
+    "audit:crawl": "node scripts/crawl.mjs",
+    "audit:screens": "node scripts/screenshot-live.mjs"
   },
   "dependencies": {
     "@astrojs/check": "^0.9.4",
@@ -20,5 +22,9 @@
     "astro": "^5.14.1",
     "tailwindcss": "^4.1.13",
     "typescript": "^5.9.2"
+  },
+  "devDependencies": {
+    "cheerio": "^1.2.0",
+    "playwright": "^1.56.1"
   }
 }

@@ -1,0 +1,51 @@
+name: Audit crawl (live WordPress site)
+
+# Runs the slow crawl of https://www.kruispadhazeldean.co.za/ from a GitHub
+# runner (the build container cannot reach the source host) and commits the
+# audit artifacts back to main.
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - scripts/crawl.mjs
+      - scripts/screenshot-live.mjs
+      - .github/workflows/audit.yml
+
+permissions:
+  contents: write
+
+concurrency:
+  group: audit
+  cancel-in-progress: false
+
+jobs:
+  crawl:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npx playwright install --with-deps chromium
+      - name: Crawl pages, REST API, sitemaps, media
+        run: node scripts/crawl.mjs
+      - name: Live screenshots (desktop + mobile) and rendered-image metrics
+        run: node scripts/screenshot-live.mjs
+      - name: Commit artifacts to main
+        run: |
+          git config user.name "kruispad-audit-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add artifacts/kruispad-audit
+          if git diff --cached --quiet; then echo "no changes"; exit 0; fi
+          git commit -m "Phase 1: live crawl audit artifacts ($(date -u +%Y-%m-%dT%H:%MZ))"
+          for i in 1 2 3 4; do
+            git pull --rebase origin main && git push origin HEAD:main && exit 0
+            sleep $((2**i))
+          done
+          exit 1
