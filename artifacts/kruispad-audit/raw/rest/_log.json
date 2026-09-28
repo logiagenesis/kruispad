@@ -1,0 +1,54 @@
+{
+  "pages": [
+    {
+      "url": "https://www.kruispadhazeldean.co.za/wp-json/wp/v2/pages?per_page=100&page=1",
+      "status": 200,
+      "total": "17",
+      "totalPages": "1"
+    }
+  ],
+  "posts": [
+    {
+      "url": "https://www.kruispadhazeldean.co.za/wp-json/wp/v2/posts?per_page=100&page=1",
+      "status": 200,
+      "total": "1",
+      "totalPages": "1"
+    }
+  ],
+  "media": [
+    {
+      "url": "https://www.kruispadhazeldean.co.za/wp-json/wp/v2/media?per_page=100&page=1",
+      "status": 200,
+      "total": "283",
+      "totalPages": "3"
+    },
+    {
+      "url": "https://www.kruispadhazeldean.co.za/wp-json/wp/v2/media?per_page=100&page=2",
+      "status": 200,
+      "total": "283",
+      "totalPages": "3"
+    },
+    {
+      "url": "https://www.kruispadhazeldean.co.za/wp-json/wp/v2/media?per_page=100&page=3",
+      "status": 200,
+      "total": "283",
+      "totalPages": "3"
+    }
+  ],
+  "categories": [
+    {
+      "url": "https://www.kruispadhazeldean.co.za/wp-json/wp/v2/categories?per_page=100&page=1",
+      "status": 200,
+      "total": "1",
+      "totalPages": "1"
+    }
+  ],
+  "menus": [
+    {
+      "url": "https://www.kruispadhazeldean.co.za/wp-json/wp/v2/menu-items?per_page=100&page=1",
+      "status": 401,
+      "total": null,
+      "totalPages": null
+    }
+  ]
+}
