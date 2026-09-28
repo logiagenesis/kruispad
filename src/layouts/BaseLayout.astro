@@ -1,0 +1,56 @@
+---
+import "../styles/global.css";
+
+interface Props {
+  title: string;
+  description: string;
+}
+
+const { title, description } = Astro.props;
+const canonical = new URL(Astro.url.pathname, Astro.site);
+---
+
+<!doctype html>
+<html lang="af-ZA">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonical.href} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="af_ZA" />
+    <meta property="og:url" content={canonical.href} />
+    <link rel="icon" href={`${import.meta.env.BASE_URL}images/source/kruispad-logo.jpg`} />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,560;9..144,680&family=Source+Sans+3:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <slot name="head" />
+  </head>
+  <body>
+    <a class="skip" href="#inhoud">Slaan oor na inhoud</a>
+    <slot />
+  </body>
+</html>
+
+<style>
+  .skip {
+    position: absolute;
+    left: 0.75rem;
+    top: 0.75rem;
+    transform: translateY(-160%);
+    background: var(--color-ink);
+    color: white;
+    padding: 0.5rem 0.8rem;
+    z-index: 20;
+  }
+
+  .skip:focus {
+    transform: none;
+  }
+</style>

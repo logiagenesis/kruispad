@@ -1,0 +1,24 @@
+{
+  "name": "kruispad",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "astro dev --host 0.0.0.0 --port 8080",
+    "build": "astro build",
+    "preview": "astro preview --host 0.0.0.0 --port 8080",
+    "typecheck": "astro check",
+    "lint": "node scripts/lint.mjs",
+    "check:links": "node scripts/check-links.mjs",
+    "check:images": "node scripts/check-images.mjs",
+    "check:alt": "node scripts/check-alt.mjs",
+    "qa": "npm run lint && npm run typecheck && npm run build && npm run check:links && npm run check:images && npm run check:alt"
+  },
+  "dependencies": {
+    "@astrojs/check": "^0.9.4",
+    "@tailwindcss/vite": "^4.1.13",
+    "astro": "^5.14.1",
+    "tailwindcss": "^4.1.13",
+    "typescript": "^5.9.2"
+  }
+}

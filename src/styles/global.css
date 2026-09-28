@@ -1,0 +1,43 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Fraunces", "Iowan Old Style", Palatino, serif;
+  --font-sans: "Source Sans 3", "Segoe UI", sans-serif;
+  --color-ink: #1c1410;
+  --color-ink-soft: #4a3b32;
+  --color-cream: #fbf6ef;
+  --color-paper: #fffdf9;
+  --color-sand: #f3e6d4;
+  --color-ember: #e25b1a;
+  --color-ember-deep: #b8430e;
+  --color-gold: #c9842a;
+  --color-line: #e7d7c4;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: var(--color-cream);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  font-size: 1.0625rem;
+  line-height: 1.6;
+}
+
+:focus-visible {
+  outline: 3px solid var(--color-ember);
+  outline-offset: 3px;
+}
+
+a {
+  color: inherit;
+}
+
+button,
+[role="button"] {
+  cursor: pointer;
+}
