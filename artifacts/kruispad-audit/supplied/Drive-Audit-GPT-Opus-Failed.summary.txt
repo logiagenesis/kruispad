@@ -1,0 +1,8 @@
+Source: Google Drive folder 1698cuh2xeohxQe5kX1fgaAdiSoO5xkh- / "Audit GPT & Opus Failed" (read 2026-09-28)
+
+Summary of two earlier failed audit attempts:
+- WP REST /wp-json/wp/v2/pages returned 17 pages; sitemap lists 17 pages, 1 post, 1 category archive, 1 author archive.
+- Site then served "Please wait while your request is being verified" (bot protection); media list, posts, sitemaps and inner pages timed out.
+- Homepage images were seen via sspark.genspark.ai proxied URLs — that was the crawler's proxy, NOT the site's real hosting (the Kimi audit confirms real wp-content/uploads URLs).
+- Homepage card links point to /preke-en-media/kruispad-erediens/, /preke-en-media/cafe-berea/, /home/odos-kidz/ (aliases; redirect behaviour to be verified).
+- Recommendation: per-image inventory incl. container dimensions, crop method, focal point, desktop/mobile positioning; rendered desktop + mobile screenshots before sign-off.
