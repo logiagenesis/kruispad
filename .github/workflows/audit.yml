@@ -4,13 +4,8 @@ name: Audit crawl (live WordPress site)
 # runner (the build container cannot reach the source host) and commits the
 # audit artifacts back to main.
 on:
+  # Manual only: re-crawling hits the church's live host, so it is never automatic.
   workflow_dispatch:
-  push:
-    branches: [main]
-    paths:
-      - scripts/crawl.mjs
-      - scripts/screenshot-live.mjs
-      - .github/workflows/audit.yml
 
 permissions:
   contents: write
@@ -37,6 +32,8 @@ jobs:
         run: node scripts/crawl.mjs
       - name: Live screenshots (desktop + mobile) and rendered-image metrics
         run: node scripts/screenshot-live.mjs
+      - name: Offline analysis (contact facts, crop risk)
+        run: node scripts/analyse-audit.mjs
       - name: Commit artifacts to main
         run: |
           git config user.name "kruispad-audit-bot"

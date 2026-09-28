@@ -1,7 +1,7 @@
 # Bekendstellingslys
 
-- [x] Fase 0: rooktoets-tuisblad en GitHub Pages-werkvloei
-- [ ] Fase 1: volledige kruip en ouditartifakte
+- [~] Fase 0: rooktoets-tuisblad en GitHub Pages-werkvloei (bou slaag; ontplooi geblokkeer tot Pages geaktiveer is)
+- [x] Fase 1: volledige kruip en ouditartifakte (lewendige URL hang af van Pages-aktivering)
 - [ ] Fase 2: datamodel en herlei-matriks
 - [ ] Fase 3: ontwerpstelsel en beeldkomponente
 - [ ] Fase 4: tuisblad

@@ -1,58 +1,67 @@
 {
-  "generatedAt": "2026-09-28T08:27:04.991Z",
-  "emails": {
-    "sandy@kruispadhazeldean.co.za": [
-      "/dien/",
-      "/meer-oor-ons/"
-    ],
-    "fred@kruispadhazeldean.co.zachristiaan": [
-      "/",
-      "/home/kontak-ons/",
-      "/home/kruispad-erediens/",
-      "/meer-oor-ons/droom-van-kruispad/",
-      "/meer-oor-ons/span/",
-      "/preke-en-media/kruispad-erediens/",
-      "/preke-en-media/preke/"
-    ],
-    "kruispadhazeldean.co.zaadmin@kruispadhazeldean.co.zasandy": [
-      "/"
-    ],
-    "kruispadhazeldean.co.zaadmin@kruispadhazeldean.co.za": [
-      "/home/kontak-ons/",
-      "/meer-oor-ons/droom-van-kruispad/",
-      "/preke-en-media/preke/"
-    ],
-    "kruispadhazelden.co.zaadmin@kruispadhazeldean.co.za": [
-      "/home/kruispad-erediens/",
-      "/preke-en-media/kruispad-erediens/"
-    ],
-    "suzi@kruispadhazeldean.co.za": [
-      "/preke-en-media/fred-suzi/"
-    ],
-    "christiaan@kruispadhazeldean.co.za": [
-      "/cafe-berea/",
-      "/preke-en-media/cafe-berea/"
-    ],
+  "generatedAt": "2026-09-28T08:32:18.630Z",
+  "note": "Derived from saved raw HTML of HTTP-200 pages. Values are verbatim; routes list every page where the value appears.",
+  "emailsInText": {
     "admin@kruispadhazeldean.co.za": [
+      "/",
       "/dien/elios/",
       "/groepe/",
       "/groepe/organisasies/",
       "/home/bydraes/",
-      "/meer-oor-ons/organisasies/"
+      "/home/kontak-ons/",
+      "/home/kruispad-erediens/",
+      "/meer-oor-ons/droom-van-kruispad/",
+      "/meer-oor-ons/organisasies/",
+      "/meer-oor-ons/span/",
+      "/preke-en-media/kruispad-erediens/",
+      "/preke-en-media/preke/"
     ],
-    "kruispadhazeldea.co.zaadmin@kruispadhazeldean.co.za": [
-      "/meer-oor-ons/span/"
-    ],
-    "admin@odos.co.zafred": [
+    "admin@odos.co.za": [
       "/home/odos-kidz/",
       "/odos-kidz/"
     ],
-    "mailto-href: mailto:admin@odos.co.za": [
+    "christiaan@kruispadhazeldea.co.za": [
+      "/meer-oor-ons/span/"
+    ],
+    "christiaan@kruispadhazeldean.co.za": [
+      "/",
+      "/cafe-berea/",
+      "/home/kontak-ons/",
+      "/meer-oor-ons/droom-van-kruispad/",
+      "/preke-en-media/cafe-berea/",
+      "/preke-en-media/preke/"
+    ],
+    "christiaan@kruispadhazelden.co.za": [
+      "/home/kruispad-erediens/",
+      "/preke-en-media/kruispad-erediens/"
+    ],
+    "fred@kruispadhazeldean.co.za": [
+      "/",
+      "/home/kontak-ons/",
+      "/home/kruispad-erediens/",
+      "/home/odos-kidz/",
+      "/meer-oor-ons/droom-van-kruispad/",
+      "/meer-oor-ons/span/",
+      "/odos-kidz/",
+      "/preke-en-media/kruispad-erediens/",
+      "/preke-en-media/preke/"
+    ],
+    "sandy@kruispadhazeldean.co.za": [
+      "/",
+      "/dien/",
+      "/meer-oor-ons/"
+    ],
+    "suzi@kruispadhazeldean.co.za": [
+      "/preke-en-media/fred-suzi/"
+    ]
+  },
+  "mailtoHrefs": {
+    "mailto:admin@odos.co.za": [
       "/home/odos-kidz/",
       "/odos-kidz/"
     ]
   },
-  "phones": {
+  "phonesInText": {
     "071 882 9815": [
       "/",
       "/dien/",
@@ -69,20 +78,18 @@
       "/preke-en-media/preke/"
     ]
   },
-  "whatsapp": {
+  "telHrefs": {},
+  "whatsappHrefs": {
     "https://chat.whatsapp.com/https://chat.whatsapp.com/GAPiX698AgFH91aM7NU8hS": [
       "/groepe/"
     ]
   },
-  "social": {
-    "https://www.facebook.com/Kruispad-Hazeldean-353684361326192": [
-      "/cafe-berea/",
-      "/home/kruispad-erediens/",
-      "/preke-en-media/cafe-berea/",
-      "/preke-en-media/fred-suzi/",
-      "/preke-en-media/kruispad-erediens/"
+  "whatsappInText": {},
+  "socialHrefs": {
+    "https://www.facebook.com/Kairos-632218386932616/?ref=page_internal": [
+      "/dien/kairos/"
     ],
-    "https://www.youtube.com/channel/UC1WmZGs_3AqwUd5CB1yLHag": [
+    "https://www.facebook.com/Kruispad-Hazeldean-353684361326192": [
       "/cafe-berea/",
       "/home/kruispad-erediens/",
       "/preke-en-media/cafe-berea/",
@@ -99,72 +106,15 @@
     "https://www.youtube.com/@kruispadgemeente585": [
       "/preke-en-media/preke/"
     ],
-    "https://www.facebook.com/Kairos-632218386932616/?ref=page_internal": [
-      "/dien/kairos/"
-    ]
-  },
-  "addresses": {
-    "Kantoor071 882 9815": [
-      "/",
-      "/groepe/",
-      "/groepe/organisasies/",
-      "/home/bydraes/",
-      "/home/kontak-ons/",
-      "/meer-oor-ons/droom-van-kruispad/",
-      "/meer-oor-ons/organisasies/",
-      "/meer-oor-ons/span/",
-      "/preke-en-media/preke/"
-    ],
-    "Kantoor UreMa – Do:08:00-16:00 Vr:08:00-12:00": [
-      "/home/kontak-ons/"
-    ],
-    "AdresKantoor 4, Gebou B,Silver Lakes Office Park,1 Von Backstrom Blvd,Pretoria, 0081": [
-      "/home/kontak-ons/"
-    ],
-    "AdresCurro Hazeldean Primary1 Silver Lakes RoadHazeldean, 0081": [
-      "/home/kontak-ons/"
-    ],
-    "Curro Private School, 1 Silverlakes Rd, Silver LakesPretoria": [
+    "https://www.youtube.com/channel/UC1WmZGs_3AqwUd5CB1yLHag": [
+      "/cafe-berea/",
       "/home/kruispad-erediens/",
+      "/preke-en-media/cafe-berea/",
       "/preke-en-media/fred-suzi/",
       "/preke-en-media/kruispad-erediens/"
-    ],
-    "Curro Private School1 Silverlakes RdSilver LakesPretoria": [
-      "/cafe-berea/",
-      "/preke-en-media/cafe-berea/"
-    ],
-    "ELSJE VISSERKantooradministrasie": [
-      "/meer-oor-ons/span/"
-    ],
-    "FINANSIËLE BYDRAES Kruispad Gemeente, baie dankie vir julle bydraes, of dit nou maandeliks is of tydens Sondae se kollekte opnames. Die offers wat U gee is  vir die onderhoud  van die gemeente, asook vir die bystandsverlening van verskeie barmhartigheid organisasies asook vir die verkondiging van": [
-      "/home/bydraes/"
     ]
   },
-  "times": {
-    "Kantoor UreMa – Do:08:00-16:00 Vr:08:00-12:00": [
-      "/home/kontak-ons/"
-    ],
-    "Sondae 9:30-10:30": [
-      "/home/kruispad-erediens/",
-      "/preke-en-media/kruispad-erediens/"
-    ],
-    "Sondae 17:30-18:30": [
-      "/home/kruispad-erediens/",
-      "/preke-en-media/kruispad-erediens/"
-    ],
-    "Sondae 17:30 – 18:30": [
-      "/cafe-berea/",
-      "/preke-en-media/cafe-berea/"
-    ],
-    "KAIROS originated as a result of an eye surgeon that did an operation on a learner from Laerskool Generaal Nicolaas Smit. The surgeon put it into words by saying: “We must thank GOD for this and that HE deserves all the glory as this was a KAIROS moment where GOD touched lives and changed them fore": [
-      "/groepe/organisasies/",
-      "/meer-oor-ons/organisasies/"
-    ],
-    "In Efesiers 5:16 beteken Kairos “Maak die beste gebruik van elke geleentheid” om dit verder te verduidelik beteken dit Tydig, Betyds, ‘n Spesifieke seisoen.Deur die jare het die nood soveel toegeneem, dat ons besluit het om ‘n onafhanklike NPO op die been te bring. Kairos “Verander Lewens” is geins": [
-      "/dien/kairos/"
-    ]
-  },
-  "googleDrive": {
+  "googleDriveHrefs": {
     "https://drive.google.com/file/d/18DqEehprxEd4J30u4jM0ua_TXxx2ZmBn/view?usp=sharing [Vorms vir Nuwe Lede]": [
       "/home/kontak-ons/"
     ],
@@ -172,5 +122,256 @@
       "/home/kontak-ons/"
     ]
   },
-  "bank": {}
+  "externalHrefs": {
+    "https://eleos.co.za/": [
+      "/dien/elios/"
+    ],
+    "https://kairoscl.org.za/": [
+      "/dien/elios/",
+      "/dien/kairos/"
+    ],
+    "https://wordpress.org/": [
+      "/",
+      "/2020/12/",
+      "/2026-kalender/",
+      "/author/admin/",
+      "/cafe-berea/",
+      "/category/uncategorized/",
+      "/dien/",
+      "/dien/elios/",
+      "/dien/kairos/",
+      "/droom-vir-kruispad/",
+      "/groepe/",
+      "/groepe/organisasies/",
+      "/home/bydraes/",
+      "/home/kontak-ons/",
+      "/home/kruispad-erediens/",
+      "/home/odos-kidz/",
+      "/meer-oor-ons/",
+      "/meer-oor-ons/droom-van-kruispad/",
+      "/meer-oor-ons/organisasies/",
+      "/meer-oor-ons/span/",
+      "/odos-kidz/",
+      "/preke-en-media/cafe-berea/",
+      "/preke-en-media/fred-suzi/",
+      "/preke-en-media/kruispad-erediens/",
+      "/preke-en-media/preke/"
+    ],
+    "https://www.google.com/maps/place/Curro+Hazeldean+preschool+and+primary+school/data=!4m2!3m1!1s0x0:0x4d954b43f85926c6?sa=X&ved=1t:2428&ictx=111": [
+      "/home/kruispad-erediens/",
+      "/preke-en-media/kruispad-erediens/"
+    ],
+    "https://www.odos.co.za/": [
+      "/home/odos-kidz/",
+      "/odos-kidz/"
+    ],
+    "https://www.odos.co.za/copy-of-odos-8": [
+      "/home/odos-kidz/",
+      "/odos-kidz/"
+    ],
+    "https://www.odos.co.za/odos-1": [
+      "/home/odos-kidz/",
+      "/odos-kidz/"
+    ],
+    "https://www.odos.co.za/odos-2": [
+      "/home/odos-kidz/",
+      "/odos-kidz/"
+    ],
+    "https://www.odos.co.za/odos-3": [
+      "/home/odos-kidz/",
+      "/odos-kidz/"
+    ],
+    "https://www.odos.co.za/odos-4": [
+      "/home/odos-kidz/",
+      "/odos-kidz/"
+    ],
+    "https://www.odos.co.za/odos-5": [
+      "/home/odos-kidz/",
+      "/odos-kidz/"
+    ],
+    "https://www.odos.co.za/odos-7": [
+      "/home/odos-kidz/",
+      "/odos-kidz/"
+    ],
+    "https://www.odos.co.za/odos6": [
+      "/home/odos-kidz/",
+      "/odos-kidz/"
+    ],
+    "iframe: https://www.google.com/maps/embed/v1/place?key=google.com/maps/place/Curro+Hazeldean+preschool+and+primary+school/data=!4m2!3m1!1s0x0:0x4d954b43f85926c6?sa=X&ved=1t:2428&ictx=111&q=Kruispad%20Hazeldean%20Kantore&zoom=16": [
+      "/dien/",
+      "/meer-oor-ons/"
+    ],
+    "iframe: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d17048.284922097333!2d28.35238115712064!3d-25.768833849051838!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e955ea5d9640313%3A0xcfab33553886a848!2sKruispad%20Gemeente!5e1!3m2!1sen!2sza!4v1757166700587!5m2!1sen!2sza": [
+      "/home/kontak-ons/"
+    ],
+    "iframe: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4261.832821025031!2d28.374440386307644!3d-25.7754720882174!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e955ea5d9640313%3A0xcfab33553886a848!2sKruispad%20Gemeente!5e1!3m2!1sen!2sza!4v1757171976686!5m2!1sen!2sza": [
+      "/cafe-berea/",
+      "/home/kruispad-erediens/",
+      "/preke-en-media/cafe-berea/",
+      "/preke-en-media/kruispad-erediens/"
+    ],
+    "iframe: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4262.070349287056!2d28.360105967060555!3d-25.768858389026963!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e955f9b36c709d9%3A0xe3e67f347382d3da!2sKruispad%20Hazeldean%20Kantore!5e1!3m2!1sen!2sza!4v1757166235773!5m2!1sen!2sza": [
+      "/home/kontak-ons/"
+    ]
+  },
+  "addressLines": {
+    "1 Silver Lakes Road / Hazeldean, 0081 / Vorms vir Nuwe Lede / Download": [
+      "/home/kontak-ons/"
+    ],
+    "1 Silverlakes Rd / Silver Lakes / Pretoria / CAFé BEREA Tye": [
+      "/cafe-berea/",
+      "/preke-en-media/cafe-berea/"
+    ],
+    "1 Von Backstrom Blvd, / Pretoria, 0081 / Adres / Curro Hazeldean Primary": [
+      "/home/kontak-ons/"
+    ],
+    "Aanwysing / Curro Private School, / 1 Silverlakes Rd, Silver Lakes / Pretoria": [
+      "/home/kruispad-erediens/",
+      "/preke-en-media/kruispad-erediens/"
+    ],
+    "Aanwysings / Curro Private School / 1 Silverlakes Rd / Silver Lakes": [
+      "/cafe-berea/",
+      "/preke-en-media/cafe-berea/"
+    ],
+    "Adres / Curro Hazeldean Primary / 1 Silver Lakes Road / Hazeldean, 0081": [
+      "/home/kontak-ons/"
+    ],
+    "Adres / Kantoor 4, Gebou B, / Silver Lakes Office Park, / 1 Von Backstrom Blvd,": [
+      "/home/kontak-ons/"
+    ],
+    "Curro Hazeldean Primary / 1 Silver Lakes Road / Hazeldean, 0081 / Vorms vir Nuwe Lede": [
+      "/home/kontak-ons/"
+    ],
+    "Curro Private School / 1 Silverlakes Rd / Silver Lakes / Pretoria": [
+      "/cafe-berea/",
+      "/preke-en-media/cafe-berea/"
+    ],
+    "Curro Private School, / 1 Silverlakes Rd, Silver Lakes / Pretoria / EREDIENS TYE": [
+      "/home/kruispad-erediens/",
+      "/preke-en-media/kruispad-erediens/"
+    ],
+    "Curro Private School, / 1 Silverlakes Rd, Silver Lakes / Pretoria / Na Suzi gaan al die kinders na Odos klassies toe tydens die diens.": [
+      "/preke-en-media/fred-suzi/"
+    ],
+    "Kantoor 4, Gebou B, / Silver Lakes Office Park, / 1 Von Backstrom Blvd, / Pretoria, 0081": [
+      "/home/kontak-ons/"
+    ],
+    "Kom leer saam met Suzi / Curro Private School, / 1 Silverlakes Rd, Silver Lakes / Pretoria": [
+      "/preke-en-media/fred-suzi/"
+    ],
+    "Silver Lakes Office Park, / 1 Von Backstrom Blvd, / Pretoria, 0081 / Adres": [
+      "/home/kontak-ons/"
+    ]
+  },
+  "timeLines": {
+    "CAFé BEREA Tye / Sondae 17:30 – 18:30 / Volg Ons / Facebook-f": [
+      "/cafe-berea/",
+      "/preke-en-media/cafe-berea/"
+    ],
+    "Café Berea / Sondae 17:30-18:30 / Volg Ons / Facebook-f": [
+      "/home/kruispad-erediens/",
+      "/preke-en-media/kruispad-erediens/"
+    ],
+    "Deur die jare het die nood soveel toegeneem, dat ons besluit het om ‘n onafhanklike NPO op die been te bring. Kairos “Verander Lewens” is geinspireer deur Dr. Gideon Du Plessis nadat hy sy hart oopgemaak het vir ‘n kind met ‘n oog probleem. Die verandering wat sy onbaatsugtige hulp aan hierdie kind se lewe gemaak het kan aan niemand beskryf word nie. / Dit is by hom waar ons geleer het wat Kairos werklik beteken. In Efesiers 5:16 beteken Kairos “Maak die beste gebruik van elke geleentheid” om dit verder te verduidelik beteken dit Tydig, Betyds, ‘n Spesifieke seisoen. Dr. Du Plessis het betyds in hierdie kind se lewe gekom en dit vir altyd ten goede verander. Dit het ons laat besef dat as net een mens ‘n kind se lewe so dramaties kan verander sal ons as ons net so ‘n bietjie van ons tyd en liefde gee soveel meer mense help en bereik. / Facebook / Globe": [
+      "/dien/kairos/"
+    ],
+    "EREDIENS TYE / Sondae 9:30-10:30 / Café Berea / Sondae 17:30-18:30": [
+      "/home/kruispad-erediens/",
+      "/preke-en-media/kruispad-erediens/"
+    ],
+    "Kairos / KAIROS originated as a result of an eye surgeon that did an operation on a learner from Laerskool Generaal Nicolaas Smit. The surgeon put it into words by saying: “We must thank GOD for this and that HE deserves all the glory as this was a KAIROS moment where GOD touched lives and changed them forever.” This is how God uses normal people to be disciples (Good Samaritans) that will pick up the poor, the broken and the lost so they can make a lasting change in the lives of someone else. Luke 10:25. / KAIROS has different projects but our Primary purpose is not only to change a life but a whole posterity! / KAIROS supports children from pre-school, primary school and high school to develop their full potential. Poverty can only be broken by education and qualifications (Tertiary education as well as trades are being sponsored!)": [
+      "/groepe/organisasies/",
+      "/meer-oor-ons/organisasies/"
+    ],
+    "Ma – Do: / 08:00-16:00 / Vr: / 08:00-12:00": [
+      "/home/kontak-ons/"
+    ],
+    "Meer oor Kairos / In Efesiers 5:16 beteken Kairos “Maak die beste gebruik van elke geleentheid” om dit verder te verduidelik beteken dit Tydig, Betyds, ‘n Spesifieke seisoen. / Deur die jare het die nood soveel toegeneem, dat ons besluit het om ‘n onafhanklike NPO op die been te bring. Kairos “Verander Lewens” is geinspireer deur Dr. Gideon Du Plessis nadat hy sy hart oopgemaak het vir ‘n kind met ‘n oog probleem. Die verandering wat sy onbaatsugtige hulp aan hierdie kind se lewe gemaak het kan aan niemand beskryf word nie. / Dit is by hom waar ons geleer het wat Kairos werklik beteken. In Efesiers 5:16 beteken Kairos “Maak die beste gebruik van elke geleentheid” om dit verder te verduidelik beteken dit Tydig, Betyds, ‘n Spesifieke seisoen. Dr. Du Plessis het betyds in hierdie kind se lewe gekom en dit vir altyd ten goede verander. Dit het ons laat besef dat as net een mens ‘n kind se lewe so dramaties kan verander sal ons as ons net so ‘n bietjie van ons tyd en liefde gee soveel meer mense help en bereik.": [
+      "/dien/kairos/"
+    ],
+    "Vr: / 08:00-12:00 / Adres / Kantoor 4, Gebou B,": [
+      "/home/kontak-ons/"
+    ]
+  },
+  "bankLines": {
+    "Maandelikse offers kan per stop-order of elektroniese oorplasing gedoen word. Vir 10de offers kan u, u van+10de as verwysing gebruik. Vir privaatheid doeleindes, is u welkom om slegs 10de as verwysing te gebruik. / Lidmate is ook welkom om bydraes vir enige ander aksie en organisasie aan die gemeente te maak in die genoemde rekening, maar u word versoek om duidelik aan te dui vir watter saak die bydra is. / Jou finansiële ondersteuning maak dit moontlik dat ons met ons werksaamhede kan voortgaan en ons wil graag almal bedank wat ons so getrou ondersteun. / Indien jy graag meer wil weer oor die aanwending van die fondse, is jy baie welkom om ons kantoor te skakel. Daar is ook goedgekeurde finansiële state beskikbaar indien u sou belangstel.": [
+      "/home/bydraes/"
+    ],
+    "Tydens Augustus maand sal daar geen kollekte opmanes tydens die eredienste gedoen word nie. Hierdie maand is die maand waar u tydens u stilte tyd, by die Here hoor, waar jy jou maandelikse en kollekte offers moet saai. / Maandelikse offers kan per stop-order of elektroniese oorplasing gedoen word. Vir 10de offers kan u, u van+10de as verwysing gebruik. Vir privaatheid doeleindes, is u welkom om slegs 10de as verwysing te gebruik. / Lidmate is ook welkom om bydraes vir enige ander aksie en organisasie aan die gemeente te maak in die genoemde rekening, maar u word versoek om duidelik aan te dui vir watter saak die bydra is. / Jou finansiële ondersteuning maak dit moontlik dat ons met ons werksaamhede kan voortgaan en ons wil graag almal bedank wat ons so getrou ondersteun.": [
+      "/home/bydraes/"
+    ]
+  },
+  "knownErrorChecks": {
+    "christiaan@kruispadhazelden.co.za (wrong domain)": [
+      "/home/kruispad-erediens/",
+      "/preke-en-media/kruispad-erediens/"
+    ],
+    "christiaan@kruispadhazeldea.co.za (truncated domain)": [
+      "/meer-oor-ons/span/"
+    ],
+    "admin@ kruispadhazeldean.co.za (space)": [],
+    "\"Kruipad Finansies\" (typo)": [
+      "/meer-oor-ons/span/"
+    ],
+    "doubled WhatsApp URL": [
+      "/groepe/"
+    ],
+    "boxout calendar link": [
+      "/dien/"
+    ],
+    "html lang=\"en-US\"": [
+      "/",
+      "/2020/12/",
+      "/2026-kalender/",
+      "/author/admin/",
+      "/cafe-berea/",
+      "/category/uncategorized/",
+      "/dien/",
+      "/dien/elios/",
+      "/dien/kairos/",
+      "/droom-vir-kruispad/",
+      "/groepe/",
+      "/groepe/organisasies/",
+      "/home/bydraes/",
+      "/home/kontak-ons/",
+      "/home/kruispad-erediens/",
+      "/home/odos-kidz/",
+      "/meer-oor-ons/",
+      "/meer-oor-ons/droom-van-kruispad/",
+      "/meer-oor-ons/organisasies/",
+      "/meer-oor-ons/span/",
+      "/odos-kidz/",
+      "/preke-en-media/cafe-berea/",
+      "/preke-en-media/fred-suzi/",
+      "/preke-en-media/kruispad-erediens/",
+      "/preke-en-media/preke/"
+    ],
+    "\"Proudly powered by WordPress\" footer credit": [
+      "/",
+      "/2020/12/",
+      "/2026-kalender/",
+      "/author/admin/",
+      "/cafe-berea/",
+      "/category/uncategorized/",
+      "/dien/",
+      "/dien/elios/",
+      "/dien/kairos/",
+      "/droom-vir-kruispad/",
+      "/groepe/",
+      "/groepe/organisasies/",
+      "/home/bydraes/",
+      "/home/kontak-ons/",
+      "/home/kruispad-erediens/",
+      "/home/odos-kidz/",
+      "/meer-oor-ons/",
+      "/meer-oor-ons/droom-van-kruispad/",
+      "/meer-oor-ons/organisasies/",
+      "/meer-oor-ons/span/",
+      "/odos-kidz/",
+      "/preke-en-media/cafe-berea/",
+      "/preke-en-media/fred-suzi/",
+      "/preke-en-media/kruispad-erediens/",
+      "/preke-en-media/preke/"
+    ]
+  }
 }
